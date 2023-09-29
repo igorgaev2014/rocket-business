@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта" />
+    <title>ProjectName</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <form action="#" id="form" class="form__body">
+          <h2 class="form__title">Отправка данных на почту</h2>
+          <div class="form__item">
+            <label for="formName" class="form__label">Имя*</label>
+            <input
+              type="text"
+              id="formName"
+              name="name"
+              class="form__input _req"
+            />
+
+            <label for="formEmail" class="form__label">E-mail*</label>
+            <input
+              type="text"
+              id="formEmail"
+              name="email"
+              class="form__input _req _email"
+            />
+          </div>
+          <div class="form__item">
+            <label for="formMessage" class="form__label">Сообщение</label>
+            <textarea
+              name="message"
+              id="formMessage"
+              class="form__input"
+            ></textarea>
+          </div>
+          <button class="form__button" type="submit">Отправить</button>
+        </form>
+      </div>
+      <header class="header">
+        <button class="header__menu-btn btn">
+          <span></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <img src="./img/mobile/logo.svg" alt="logo" />
+        <div class="header__contacts contacts">
+          <a class="contacts__tel" href="tel:+78630000000">+7(863) 000 00 00</a>
+          <div class="contacts__address">
+            <p class="contacts__city">Ростов-на-Дону</p>
+            <p class="contacts__street visually-hidden">ул. Ленина, 2б</p>
+          </div>
+        </div>
+        <nav class="header__nav">
+          <div class="container">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">О клинике</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Услуги</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Специалисты</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Цены</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Контакты</a>
+              </li>
+            </ul>
+            <button class="header__reg-btn btn btn--white">
+              Записаться на прием
+            </button>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="intro">
+          <div class="container">
+            <div class="">
+              <img src="./img/mobile/main.jpg" alt="main" class="intro__img" />
+            </div>
+            <h1 class="intro__title">
+              Многопрофильная клиника для детей и взрослых
+            </h1>
+            <p class="intro__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+        </section>
+        <section class="slider">
+          <div class="container">
+            <div class="swiper">
+              <div class="slider__list swiper-wrapper">
+                <div class="slider__item swiper-slide">
+                  <img
+                    src="./img/mobile/doctor-working-table.jpg"
+                    alt="doctor"
+                    class="slider__img"
+                  />
+                  <div class="slider__description">
+                    <h3 class="slider__title">
+                      Check-Up <span class="slider__span">для мужчин</span>
+                    </h3>
+                    <ul class="slider__advantages">
+                      <li class="slider__advantage">Гормональный скрининг</li>
+                      <li class="slider__advantage">Тестостерон</li>
+                      <li class="slider__advantage">Свободный тестостерон</li>
+                      <li class="slider__advantage">
+                        Глобулин, связывающий половые гормоны
+                      </li>
+                    </ul>
+                    <p class="slider__new-price">
+                      Всего 2800₽ <span class="slider__old-price">3500₽ </span>
+                    </p>
+                    <button class="slider__btn btn">Записаться</button>
+                    <button class="slider__btn btn btn--transparent">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+
+                <div class="slider__item swiper-slide">
+                  <img
+                    src="./img/mobile/doctor-working-table.jpg"
+                    alt="doctor"
+                    class="slider__img"
+                  />
+                  <div class="slider__description">
+                    <h3 class="slider__title">
+                      Check-Up <span class="slider__span">для мужчин</span>
+                    </h3>
+                    <ul class="slider__advantages">
+                      <li class="slider__advantage">Гормональный скрининг</li>
+                      <li class="slider__advantage">Тестостерон</li>
+                      <li class="slider__advantage">Свободный тестостерон</li>
+                      <li class="slider__advantage">
+                        Глобулин, связывающий половые гормоны
+                      </li>
+                    </ul>
+                    <p class="slider__new-price">
+                      Всего 2800₽ <span class="slider__old-price">3500₽ </span>
+                    </p>
+                    <button class="slider__btn btn">Записаться</button>
+                    <button class="slider__btn btn btn--transparent">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+
+                <div class="slider__item swiper-slide">
+                  <img
+                    src="./img/mobile/doctor-working-table.jpg"
+                    alt="doctor"
+                    class="slider__img"
+                  />
+                  <div class="slider__description">
+                    <h3 class="slider__title">
+                      Check-Up <span class="slider__span">для мужчин</span>
+                    </h3>
+                    <ul class="slider__advantages">
+                      <li class="slider__advantage">Гормональный скрининг</li>
+                      <li class="slider__advantage">Тестостерон</li>
+                      <li class="slider__advantage">Свободный тестостерон</li>
+                      <li class="slider__advantage">
+                        Глобулин, связывающий половые гормоны
+                      </li>
+                    </ul>
+                    <p class="slider__new-price">
+                      Всего 2800₽ <span class="slider__old-price">3500₽ </span>
+                    </p>
+                    <button class="slider__btn btn">Записаться</button>
+                    <button class="slider__btn btn btn--transparent">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+
+                <div class="slider__item swiper-slide">
+                  <img
+                    src="./img/mobile/doctor-working-table.jpg"
+                    alt="doctor"
+                    class="slider__img"
+                  />
+                  <div class="slider__description">
+                    <h3 class="slider__title">
+                      Check-Up <span class="slider__span">для мужчин</span>
+                    </h3>
+                    <ul class="slider__advantages">
+                      <li class="slider__advantage">Гормональный скрининг</li>
+                      <li class="slider__advantage">Тестостерон</li>
+                      <li class="slider__advantage">Свободный тестостерон</li>
+                      <li class="slider__advantage">
+                        Глобулин, связывающий половые гормоны
+                      </li>
+                    </ul>
+                    <p class="slider__new-price">
+                      Всего 2800₽ <span class="slider__old-price">3500₽ </span>
+                    </p>
+                    <button class="slider__btn btn">Записаться</button>
+                    <button class="slider__btn btn btn--transparent">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+
+                <div class="slider__item swiper-slide">
+                  <img
+                    src="./img/mobile/doctor-working-table.jpg"
+                    alt="doctor"
+                    class="slider__img"
+                  />
+                  <div class="slider__description">
+                    <h3 class="slider__title">
+                      Check-Up <span class="slider__span">для мужчин</span>
+                    </h3>
+                    <ul class="slider__advantages">
+                      <li class="slider__advantage">Гормональный скрининг</li>
+                      <li class="slider__advantage">Тестостерон</li>
+                      <li class="slider__advantage">Свободный тестостерон</li>
+                      <li class="slider__advantage">
+                        Глобулин, связывающий половые гормоны
+                      </li>
+                    </ul>
+                    <p class="slider__new-price">
+                      Всего 2800₽ <span class="slider__old-price">3500₽ </span>
+                    </p>
+                    <button class="slider__btn btn">Записаться</button>
+                    <button class="slider__btn btn btn--transparent">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+
+                <div class="slider__item swiper-slide">
+                  <img
+                    src="./img/mobile/doctor-working-table.jpg"
+                    alt="doctor"
+                    class="slider__img"
+                  />
+                  <div class="slider__description">
+                    <h3 class="slider__title">
+                      Check-Up <span class="slider__span">для мужчин</span>
+                    </h3>
+                    <ul class="slider__advantages">
+                      <li class="slider__advantage">Гормональный скрининг</li>
+                      <li class="slider__advantage">Тестостерон</li>
+                      <li class="slider__advantage">Свободный тестостерон</li>
+                      <li class="slider__advantage">
+                        Глобулин, связывающий половые гормоны
+                      </li>
+                    </ul>
+                    <p class="slider__new-price">
+                      Всего 2800₽ <span class="slider__old-price">3500₽ </span>
+                    </p>
+                    <button class="slider__btn btn">Записаться</button>
+                    <button class="slider__btn btn btn--transparent">
+                      Подробнее
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">-</div>
+              <div class="swiper-button-next">+</div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer__wrapper">
+          <a href="#" class="footer__logo logo">
+            <img src="./img/mobile/logo.svg" alt="logo" />
+          </a>
+
+          <ul class="footer__socials socials">
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <span class="visually-hidden">Instagram</span>
+                <img src="./img/mobile/instagram.png" alt="instagram"
+              /></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <span class="visually-hidden">Whatsapp</span>
+                <img src="./img/mobile/whatsapp.png" alt="whatsap"
+              /></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <span class="visually-hidden">Telegram</span>
+                <img src="./img/mobile/telegram.png" alt="telegram"
+              /></a>
+            </li>
+          </ul>
+
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">О клинике</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Услуги</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Специалисты</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Цены</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

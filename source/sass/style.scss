@@ -1,0 +1,203 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+// Swiper 8.4.7
+@import "vendor/swiper";
+
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/btn";
+@import "blocks/modal";
+@import "blocks/custom-input";
+@import "blocks/custom-toggle";
+@import "blocks/custom-select";
+@import "blocks/header.scss";
+@import "blocks/intro.scss";
+@import "blocks/slider.scss";
+@import "blocks/footer.scss";
+
+// ---------------------------------
+
+// ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
+
+// ❗ обязательно используйте mixin hover-focus для отключения ховеров на тач устройствах
+/* @mixin hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+/*  @include hover-focus {
+      opacity: 0.8;
+    }
+*/
+// но не используем для текстовых полей ( input, textarea )
+// так же в сборке есть отдельный миксин для hover
+/*@mixin hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+  }
+*/
+// для focus
+/*@mixin focus {
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+// и для active
+/*@mixin active {
+    &.focus-visible:active {
+      @content;
+    }
+  }
+*/
+// адаптив пишем внутри каждого класса (смотрим container.scss)
+
+// для фикса проблем с vh на iOS в сборке подключен скрипт
+// используя vh на проекте задавайте их также как в примере в utils.scss
+
+// для любых transition обязательно указывайте transition-property
+// transition: $trans-default ❌ ---> transition: color $trans-default ✅
+
+body {
+  font-family: $ff-caption;
+  position: relative;
+}
+
+body.open {
+  overflow: hidden;
+  height: 100vh;
+}
+
+p {
+  margin: 0;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts {
+		// .contacts__tel
+		&__tel {
+		}
+		// .contacts__address
+		&__address {
+		}
+		// .contacts__city
+		&__city {
+		}
+		// .contacts__street
+		&__street {
+		}
+}
+
+.logo {
+
+}
+
+.socials {
+		// .socials__item
+		&__item {
+		}
+		// .socials__link
+		&__link {
+		}
+}
+
+.form {
+  // .form__body
+  &__body {
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  // .form__title
+  &__title {
+    font-size: 40px;
+    margin: 0 0 30px 0;
+  }
+  // .form__item
+  &__item {
+    margin: 0 0 20px 0;
+  }
+  // .form__label
+  &__label {
+    font-size: 18px;
+    display: block;
+  }
+  // .form__input
+  &__input {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+
+
+    &:focus {
+      box-shadow: 0 0 15px #575757;
+    }
+  }
+  // .form__button
+  &__button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+}
+
+textarea.form__input {
+  min-height: 120px;
+  resize: vertical;
+  padding: 20px;
+}
+
+.form__input._error {
+  box-shadow: 0 0 15px red;
+}
+.form__body {
+  position: relative;
+}
+
+.form__body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.9) url("../img/ZKZg.gif") center / 50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form__body._sending::after {
+  opacity: 1;
+  visibility: visible;
+}

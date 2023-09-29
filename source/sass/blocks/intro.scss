@@ -1,0 +1,28 @@
+
+.intro {
+  color: $color-firefly;
+  padding-bottom: 53px;
+  background-color: $color-mint-cream;
+		// .intro__img
+		&__img {
+      margin-bottom: 35px;
+      width: 100%;
+      object-fit: cover;
+      object-position: 0 0;
+		}
+		// .intro__title
+		&__title {
+      font-size: 26px;
+      line-height: 34px;
+      font-weight: bold;
+      max-width: 267px;
+      margin: 0 0 9px 0;
+		}
+		// .intro__description
+		&__description {
+      font-size: 14px;
+      line-height: 150%;
+      font-weight: normal;
+      margin: 0;
+		}
+}

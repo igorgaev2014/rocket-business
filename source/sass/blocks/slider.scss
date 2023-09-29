@@ -1,0 +1,77 @@
+
+.slider {
+  padding-top: 49px;
+  padding-bottom: 35px;
+		// .slider__list
+		&__list {
+		}
+		// .slider__item
+		&__item {
+      background-color: $color-tranquil;
+      padding-bottom: 42px;
+      border-radius: 4px;
+		}
+
+    &__description {
+      padding-left: 23px;
+      padding-right: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+		// .slider__img
+		&__img {
+      margin-bottom: 22px;
+      width: 100%;
+      object-fit: cover;
+      object-position: 0 0;
+		}
+		// .slider__title
+		&__title {
+      font-weight: bold;
+      font-size: 26px;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+		// .slider__span
+		&__span {
+      text-transform: none;
+      font-size: 14px;
+      margin-top: 5px;
+      margin-bottom: 12px;
+		}
+		// .slider__advantages
+		&__advantages {
+      font-size: 14px;
+      padding: 0 0 0 20px;
+      margin-bottom: 17px;
+		}
+		// .slider__advantage
+		&__advantage {
+      &::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: $color-jungle-green; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        font-size: 20px;
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+      }
+		}
+		// .slider__new-price
+		&__new-price {
+      color: $color-firefly;
+      margin-bottom: 27px;
+		}
+		// .slider__old-price
+		&__old-price {
+      color: #868686;
+      text-decoration: line-through;
+		}
+		// .slider__btn
+		&__btn {
+      display: block;
+      // max-width: 196px;
+		}
+}
